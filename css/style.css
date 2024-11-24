@@ -168,7 +168,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
+  color: #fe0603
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -436,6 +436,9 @@ a:focus {
   margin-bottom: 15px;
 }
 
+img#check {
+  height: 50px;
+}
 .service_section .box .img-box img {
   max-width: 100%;
   max-height: 100%;
@@ -599,11 +602,23 @@ a:focus {
   background-color: #007fa4;
 }
 
+section.why_section.layout_padding {
+  background-color: antiquewhite;
+}
+
 /*team section */
+section.team_members {
+  background-color: #ffffff;
+  height: auto;
+  padding: 80px 40px;
+}
+
+
+
 .team_section {
   text-align: center;
-  background-color: #00204a;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .team_section .heading_container {
@@ -640,7 +655,6 @@ a:focus {
 }
 
 .team_section .team_container .box .img-box img {
-  width: 120px;
   border-radius: 100%;
   border: 5px solid #ffffff;
 }
@@ -679,6 +693,7 @@ a:focus {
 .client_section .heading_container {
   margin-bottom: 30px;
 }
+
 
 .client_section .box {
   display: -webkit-box;
@@ -737,7 +752,9 @@ a:focus {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
-  padding: 75px 25px 25px 25px;
+  padding: 20px;
+
+  height: 100px;
 }
 
 .client_section .box .detail-box i {

@@ -8,8 +8,12 @@
   }
 
   .hero_area {
-    background: linear-gradient(130deg, #231a6f, #0f054c);
+    background: linear-gradient(130deg,  #ffde6d , #FF9900);
   }
+
+  img#logo1 {
+    width: 250px;
+}
 
   .hero_area .hero_bg_box {
     display: none;
@@ -95,6 +99,7 @@
   .service_section .box .img-box {
     justify-content: flex-start;
     margin-bottom: 15px;
+    width: 50px;
   }
 }
 
