@@ -50,7 +50,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #ff9900;
+  color: #00bbf0;
 }
 
 .heading_container p {
@@ -127,7 +127,7 @@ a:focus {
 
 .sub_page .hero_area {
   min-height: auto;
-  background: linear-gradient(130deg, #231a6f, #0f054c);
+  background: linear-gradient(130deg, #ff9900, #ff9900);
 }
 
 .sub_page .hero_area .hero_bg_box {
