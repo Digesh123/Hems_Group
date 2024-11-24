@@ -613,7 +613,9 @@ section.team_members {
   padding: 80px 40px;
 }
 
-
+p#brij {
+  display: none;
+}
 
 .team_section {
   text-align: center;

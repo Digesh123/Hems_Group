@@ -42,6 +42,14 @@
     margin-bottom: 45px;
   }
 
+  p#birj1 {
+    display: none;
+}
+
+p#brij {
+  display: block;
+}
+
 }
 
 @media (max-width: 576px) {
