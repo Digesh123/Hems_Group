@@ -50,7 +50,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #00bbf0;
+  color: #000000;
 }
 
 .heading_container p {
@@ -127,7 +127,7 @@ a:focus {
 
 .sub_page .hero_area {
   min-height: auto;
-  background: linear-gradient(130deg, #ff9900, #ff9900);
+  background: linear-gradient(130deg, #ffdd6c, #ff9900);
 }
 
 .sub_page .hero_area .hero_bg_box {
@@ -486,8 +486,10 @@ img#check {
 }
 
 .about_section {
-  background-color: #00204a;
+  background-color: #ff9900;
   color: #ffffff;
+ background-image: url("images/hero1-bg.png");
+ background-size: cover;
 }
 
 .about_section .heading_container {
@@ -510,6 +512,9 @@ img#check {
 
 .about_section .detail-box p {
   margin-top: 15px;
+  background-color: #223180;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .about_section .detail-box a {
