@@ -4,6 +4,7 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .layout_padding {
@@ -50,7 +51,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #000000;
+  color: #223182;
 }
 
 .heading_container p {
@@ -515,6 +516,38 @@ img#check {
   background-color: #223180;
   padding: 10px;
   border-radius: 5px;
+}
+.circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #00204a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+.outer {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.about_section .detail-box p:hover {
+  height: 80px;
+  text-align: justify;
+  display: flex;
+
+  align-items: center;
+  font-size: medium;
+  background-color: white;
+  color: #223182;
+  transition: 0.3s;
 }
 
 .about_section .detail-box a {
