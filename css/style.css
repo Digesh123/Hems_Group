@@ -48,6 +48,11 @@ body {
   position: relative;
   font-weight: bold;
   margin-bottom: 0;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+section.about_service_areas {
+  margin-bottom: 50px;
 }
 
 .heading_container h2 span {
@@ -486,6 +491,18 @@ img#check {
   background-color: #007fa4;
 }
 
+.cities {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.cities_heading h1 {
+  color: #00204a;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-size: 100%;
+}
+
 .about_section {
   background-color: #ff9900;
   color: #ffffff;
@@ -517,25 +534,41 @@ img#check {
   padding: 10px;
   border-radius: 5px;
 }
+.circle:hover{
+  
+    background-color: white;
+    color: #00204a;
+}
 .circle {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+
   background-color: #00204a;
   display: flex;
-  align-items: center;
+  border-radius: 10px;
   justify-content: center;
   padding: 20px;
   text-align: center;
   color: white;
   margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.Outer_heading {
+  padding: 40px;
+  text-align: center;
+}
+
+.Outer_heading h1 {
+  text-decoration: underline;
+  font-size: #ff9900;
+  /* color: #ff9900; */
+  text-underline-offset: 10px;
+  text-decoration-color: #ff9900;
 }
 .outer {
-  padding: 50px;
+  /* padding: 50px; */
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
-
+  margin-bottom: 50px;
 }
 
 .about_section .detail-box p:hover {
