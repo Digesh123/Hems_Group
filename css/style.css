@@ -47,20 +47,22 @@ body {
 .heading_container h2 {
   position: relative;
   font-weight: bold;
+  color: rgb(0, 0, 0);
   margin-bottom: 0;
   text-decoration: underline;
   text-underline-offset: 10px;
+  
 }
 section.about_service_areas {
   margin-bottom: 50px;
 }
 
 .heading_container h2 span {
-  color: #223182;
+  color: #000000;
 }
 
 .heading_container p {
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
@@ -510,6 +512,10 @@ img#check {
  background-size: cover;
 }
 
+section.service_section.layout_padding {
+  background: linear-gradient(130deg, #ffdd6c, #ff9900);
+}
+
 .about_section .heading_container {
   margin-bottom: 45px;
 }
@@ -551,6 +557,7 @@ img#check {
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .Outer_heading {
   padding: 40px;
   text-align: center;
@@ -674,7 +681,7 @@ img#check {
 }
 
 section.why_section.layout_padding {
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
 }
 
 /*team section */
@@ -762,6 +769,37 @@ p#brij {
 }
 
 /*team section end*/
+
+section.vision {
+  padding:  50px 100px;
+}
+section.vision2 {
+  padding: 50px 100px;
+  background-color: #00204a;
+  color: white;
+}
+
+.vision-heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding-bottom: 20px;
+}
+
+.vision-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.vision-card p {
+ padding: 10px;
+}
+
+
+
 /* client section start */
 .client_section .heading_container {
   margin-bottom: 30px;

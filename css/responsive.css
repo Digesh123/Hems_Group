@@ -41,6 +41,20 @@
   .about_section .img-box {
     margin-bottom: 45px;
   }
+
+  section.vision {
+    padding:  50px 20px;  
+}
+.box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+section.vision2 {
+  padding: 50px 20px;
+  background-color: #00204a;
+  color: white;
+}
 .out1{
   margin: 0px;
 }
