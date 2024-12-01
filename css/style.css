@@ -7,6 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
+
 .layout_padding {
   padding: 90px 0;
 }
@@ -47,7 +48,7 @@ body {
 .heading_container h2 {
   position: relative;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   margin-bottom: 0;
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -57,13 +58,12 @@ section.about_service_areas {
   margin-bottom: 50px;
 }
 
-.heading_container h2 span {
-  color: #000000;
-}
+
 
 .heading_container p {
   margin-top: 40px;
   margin-bottom: 0;
+  color: white;
 }
 
 .heading_container.heading_center {
@@ -505,11 +505,84 @@ img#check {
   font-size: 100%;
 }
 
+.horrow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.vercolumn {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.vercolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+section.awards {
+  padding: 10px;
+}
 .about_section {
-  background-color: #ff9900;
+  background: linear-gradient(130deg, #ffdd6c, #ff9900);
   color: #ffffff;
- background-image: url("images/hero1-bg.png");
- background-size: cover;
+
 }
 
 section.service_section.layout_padding {
@@ -568,7 +641,7 @@ section.service_section.layout_padding {
   font-size: #ff9900;
   /* color: #ff9900; */
   text-underline-offset: 10px;
-  text-decoration-color: #ff9900;
+  text-decoration-color: #00204a;
 }
 .outer {
   /* padding: 50px; */

@@ -35,13 +35,13 @@
 
 </head>
 
-<body>
+<body class="sub_page">
 
   <div class="hero_area">
 
     <div class="hero_bg_box">
       <div class="bg_img_box">
-        <img src="images/hero1-bg.png" alt="">
+        <img src="images/hero-bg1.png" alt="">
       </div>
     </div>
 
@@ -71,7 +71,7 @@
                 <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Our Clients</a>
+                <a class="nav-link" href="awards.html">Our Clients</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="awards.html">Achivements </a>
@@ -81,92 +81,44 @@
           </div>
         </nav>
       </div>
+
+
+
+
+
     </header>
     <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Your Debt, <br>
-                      Our Priority.
-                    </h1>
-                    <p>
-                      We specialize in helping businesses and consumers recover debts that are due to them. Our operations in multi locations have been rated as one of the best in the industry.
-                    </p>
-                    <div class="btn-box">
-                      <a href="#service" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-               
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Take Control <br>
-                      Of Your Debt
-                    </h1>
-                    <p> For 20 years, we’ve been the trusted partner for major banks and cellular companies. Our expert team specializes in efficient debt recovery, maximizing returns while minimizing risk.
-                                       </p>
-                    <div class="btn-box">
-                      <a href="#service" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      We  <br>
-                      make It Happen
-                     
-                    </h1>
-                    <p>
-                      Engaged in back-end support services & debt collection to MNC Banks and Cellular Industries  
-                     
-                    </p>
-                    <div class="btn-box">
-                      <a href="#service" class="btn1">
-                        Read More   
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ol class="carousel-indicators">
-          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <li data-target="#customCarousel1" data-slide-to="2"></li>
-        </ol>
-      </div>
-
-    </section>
-    <!-- end slider section -->
   </div>
+  <section class="awards">
+    <div class="horrow"> 
+      <div class="vercolumn">
+        <img id="myImg"  onclick="getImageId(this)" src="images/aw1.jpg" style="width:100%">
+        <img id="myImg2" onclick="getImageId(this)" src="images/aw2.jpg" style="width:100%">
+      
+      </div>
+      <div class="vercolumn">
+        <img id="myImg3" onclick="getImageId(this)" src="images/aw3.jpg" style="width:100%">
+        <img id="myImg4" onclick="getImageId(this)" src="images/aw4.jpg" style="width:100%">
+        <img id="myImg5" onclick="getImageId(this)" src="images/aw8.jpg" style="width:100%">
+    
+      </div>  
+      <div class="vercolumn">
+        <img id="myImg6" onclick="getImageId(this)" src="images/aw5.jpg" style="width:100%">
+        <img id="myImg7" onclick="getImageId(this)" src="images/aw6.jpg" style="width:100%">
+       
+      </div>
+      <div class="vercolumn">
+        <img id="myImg8" onclick="getImageId(this)" src="images/aw7th.jpg" style="width:100%">
+
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+  </section>
 
 
 
@@ -303,6 +255,40 @@
   <!-- footer section -->
 
   <!-- jQery -->
+   
+<script>
+
+function getImageId(image) {
+  var imageId = image.id;
+
+
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById(imageId);
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){ 
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+
+
+
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+
+}
+  </script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
