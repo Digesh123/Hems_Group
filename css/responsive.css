@@ -69,6 +69,11 @@ section.vision2 {
 p#brij {
   display: block;
 }
+.clcolumn {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
 
 .about_section .detail-box h3 {
   font-weight: bold;
