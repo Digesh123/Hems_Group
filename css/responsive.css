@@ -130,6 +130,34 @@ p#brij {
     position: unset;
     margin: 0 2.5px;
   }
+
+  .client-heading{
+    font-size: 1rem; 
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+      padding:  10px 30px;
+      border: 2px solid  #e58f0e; 
+      border-radius: 50px; 
+      background-color: #e58f0e; 
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+      display: inline-block; 
+      transition: all 0.3s ease-in-out;
+    
+  }
+
+  .image-box {
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px  4px  10px  #5b5959; 
+    transition: transform 0.3s ease-in-out;
+  }
 }
 
 @media (max-width: 480px) {

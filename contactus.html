@@ -17,6 +17,8 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <link rel="shortcut icon" href="images/favicon.png" type="" />
 
     <title>Hem Debt Collection</title>
@@ -96,8 +98,8 @@
                   <a class="nav-link" href="awards.html">Achivements </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contactus.html">Contact Us </a>
-                </li>
+                    <a class="nav-link" href="contactus.html">Contact Us </a>
+                  </li>
               </ul>
             </div>
           </nav>
@@ -106,150 +108,88 @@
       <!-- end header section -->
     </div>
 
-    <!-- service section -->
+    <!--contact us section -->
 
-    <section class="service_section layout_padding">
-      <div class="service_container">
+
+    
+
+    <section class="contact_section layout_padding2">
         <div class="container">
-          <div class="heading_container heading_center">
-            <h2>About <span>Us</span></h2>
-            <p>
-              We introduce ourselves as a professionally managed group, mainly
-              engaged in back end support services & debt collection to MNC
-              Banks and Cellular Industries. We specialize in helping businesses
-              and consumers recover debts that are due to them. Our operations
-              in multi locations have been rated as one of the best in the
-              industry.
-            </p>
-          </div>
-
-          <div class="cities">
-            <div class="cities_heading">
-              <h1>CITIES WHERE WE ARE OPERATIONAL</h1>
+            <div class="row">
+                <!-- Address & Contact Information -->
+                <div class="col-md-6 col-lg-6 contact_col">
+                    <div class="contact_info">
+                        <h4>Our Address</h4>
+                        <div class="contact_info_details">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    Flat No. 201, 2nd Floor, Indira Chambers, 1549-B, Sadashiv Peth, Opp. Maharashtra Mandal, Tilak Road, Pune - 411030.
+                                </span>
+                            </a>
+                            <a href="tel:02041216616">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>
+                                    <ul>
+                                        <li>020 - 41216616</li>
+                                        <li>020 - 41216616</li>
+                                        <li>9028402097</li>
+                                    </ul>
+                                </span>
+                            </a>
+                            <a href="mailto:arvind.mitra@hemgroups.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>arvind.mitra@hemgroups.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact_social">
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                
+                <!-- Contact Form -->
+                <div class="col-md-6 col-lg-6 contact_col">
+                    
+                    <form id="contact-form" class="contact_form">
+                        <h4>Contact Us</h4>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message </button>
+                    </form>
+                    <div id="response"></div>
+                </div>
             </div>
-            <div class="city-card row">
-              <div id="citycard" class="col-md-4">
-                <div class="box">
-                  <div class="detail-box">
-                    <h5>Western Region</h5>
-                    <ul>
-                      <li>Vasai,Virar (Mumbai)</li>
-                      <li>Pune</li>
-                      <li>Ahmedabad, Baroda (Gujrat)</li>
-                      <li>Ahmednagar</li>
-                      <li>Nasik</li>
-                      <li>Aurangabad</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div id="citycard" class="col-md-4">
-                <div class="box">
-                  <div class="detail-box">
-                    <h5>South Region</h5>
-                    <ul>
-                      <li>Kerala</li>
-                      <li>Thrissur</li>
-                      <li>Shornur</li>
-                      <li>Ernakulam</li>
-                      <li>Trivanthapuram</li>
-                      <li>Kozikode</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div id="citycard" class="col-md-4">
-                <div class="box">
-                  <div class="detail-box">
-                    <h5>Center Region</h5>
-                    <ul>
-                      <li>Nagpur</li>
-                      <li>Akola</li>
-                      <li>Amravati</li>
-                    </ul>
-                    <h5>Eastern Region</h5>
-                    <ul>
-                      <li>Kolkata</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-
-    <section class="vision">
-      <div class="vision-heading">
-        <h1>OUR STRENGTHS</h1>
-      </div>
-
-      <div class="vision-card">
-        <p>
-          <span class="strength-point">✔</span> The leader in the industry with
-          multicity operations.
-        </p>
-        <p>
-          <span class="strength-point">✔</span> The unmatched experience in the
-          industry.
-        </p>
-        <p><span class="strength-point">✔</span> Zero turnaround time.</p>
-        <p>
-          <span class="strength-point">✔</span> Managed professionally without
-          compromising other activities.
-        </p>
-        <p>
-          <span class="strength-point">✔</span> MIS generated periodically to
-          benefit the banks.
-        </p>
-        <p>
-          <span class="strength-point">✔</span> We maintain ethics and integrity
-          and safeguard the brand equity of the parent organization.
-        </p>
-        <p>
-          <span class="strength-point">✔</span> The industry has confidence in
-          us.
-        </p>
-        <p><span class="strength-point">✔</span> Low manpower turnover.</p>
-      </div>
-    </section>
-
-    <section class="vision2">
-      <div class="vision-heading">
-        <h2>Our vision</h2>
-      </div>
-
-      <div class="vision-card">
-        <p>
-          <span class="strength-point">✔</span>To be the recognized leader in
-          Sales.
-        </p>
-        <p>
-          <span class="strength-point">✔</span>
-          credit and debt resolution services spanning the globe through an
-          integrated network of like-minded individuals working under the core
-          values of Integrity and transparency and systematic and organized
-          processes.
-        </p>
-      </div>
-    </section>
-
-    <section class="vision">
-      <div class="vision-heading">
-        <h3>GROUP OF COMPANIES</h3>
-      </div>
-
-      <div class="vision-card">
-        <p><span class="strength-point">✔</span>Hem Debt Consultants Pvt Ltd</p>
-        <p><span class="strength-point">✔</span>Hem Enterprises</p>
-        <p><span class="strength-point">✔</span>Hem Debt Management Team</p>
-
-        <p><span class="strength-point">✔</span>Hem Debt & Credit Services</p>
-        <p><span class="strength-point">✔</span>Hem Associates</p>
-        <p><span class="strength-point">✔</span>Aryan Credit Services</p>
-      </div>
-    </section>
+    
+    
 
     <!-- end service section -->
 
@@ -332,7 +272,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3 info_col">
-            <img src="images/logo.png" style="width: 100%" />
+            <img src="images/logo.png" style="width: 100%"/>
             <!-- <form action="#">
             <input type="text" placeholder="Enter email" />
             <button type="submit">
