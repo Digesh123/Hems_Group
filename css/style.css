@@ -46,25 +46,65 @@ body {
 }
 
 .heading_container h2 {
-  position: relative;
+  /* position: relative;
   font-weight: bold;
   color: rgb(0, 0, 0);
   margin-bottom: 0;
   text-decoration: underline;
-  text-underline-offset: 10px;
-  
+  text-underline-offset: 10px; */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: ff9900;  /* Dark color for good contrast */
+  margin-bottom: 10px;
 }
+
+.heading_container h2 span {
+    /* Accent color for 'Us' */
+  text-transform: capitalize;
+}
+
 section.about_service_areas {
   margin-bottom: 50px;
 }
 
-
-
 .heading_container p {
+  font-size: 1.125rem;
+  color: white;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.heading_container h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.heading_container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.heading_container h2:hover::after {
+  width: 100%;
+}
+
+
+
+/* .heading_container p {
   margin-top: 40px;
   margin-bottom: 0;
   color: white;
-}
+} */
 
 .heading_container.heading_center {
   -webkit-box-align: center;
@@ -498,11 +538,18 @@ img#check {
   margin: 50px 0px;
 }
 
+#citycard{
+  display: flex;
+  justify-content: center;
+  
+}
+
 .cities_heading h1 {
   color: #00204a;
   text-decoration: underline;
   text-underline-offset: 10px;
   font-size: 100%;
+  font-size: 1.3rem;
 }
 
 .horrow {
@@ -649,6 +696,250 @@ section.service_section.layout_padding {
   /* flex-wrap: wrap; */
   justify-content: center;
   margin-bottom: 50px;
+} 
+
+
+/* contact us new css  */
+
+.contact_section {
+  padding: 60px 0;
+  background-color:white; 
+
+
+}
+
+.contact_section h4 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact_col {
+  padding: 25px;
+  margin-bottom: 30px;
+  
+}
+
+
+.contact_info {
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 55px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact_info h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.contact_info a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact_info a:hover {
+  color: #007bff;
+}
+.contact_info_details{
+  padding: 30px 0;
+}
+
+.contact_info a i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact_info ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.contact_info ul li {
+  margin-bottom: 8px;
+}
+
+/* Social Icons */
+.contact_social {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.contact_social a {
+  font-size: 19px;
+  color: #555;
+  padding: 25px;
+  border-radius: 15%;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.contact_social a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+/* Address and Contact Info css  */
+.contact_info {
+  margin-bottom: 50px;
+}
+
+.contact_info a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+}
+
+.contact_info a:hover {
+  color: #007bff;
+}
+
+.contact_info a i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+
+
+/* Contact Form */
+
+/* Contact Form */
+.contact_form {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact_form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact_form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact_form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact_form button:hover {
+  background-color: #0056b3;
+}
+
+/* Response Message */
+#response {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#response p {
+  margin: 0;
+}
+
+#response p.success {
+  color: green;
+}
+
+#response p.error {
+  color: red;
+}
+
+
+
+
+
+
+
+/* about new css  */
+
+.city-card .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.city-card.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.city-card h5 {
+  font-size: 1.5em;
+  color:#ff9900; /* Green color for the title */
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff9900; /* Underline with the same green color */
+}
+.city-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+  color: #555;
+}
+.detail-box li:hover {
+  color: #ff9900;
+  cursor: pointer;
+}
+.city-card ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
 }
 
 .about_section .detail-box p:hover {
@@ -843,7 +1134,7 @@ p#brij {
 
 /*team section end*/
 
-section.vision {
+/* section.vision {
   padding:  50px 100px;
 }
 section.vision2 {
@@ -857,19 +1148,72 @@ section.vision2 {
   text-decoration: underline;
   text-underline-offset: 10px;
   padding-bottom: 20px;
-}
+} */
+  /* new css for visioon  */
 
-.vision-card {
+/* .vision-card {
   align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
+} */
+
+section.vision2 {
+  padding: 50px 100px;
+  background-color: #00204a;
+  color: white;
 }
 
+.vision {
+  padding: 50px 20px;
+  background-color: #f9fcff;
+ 
+}
 
+.vision-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.vision-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.vision-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  line-height: 1.6;
+}
 .vision-card p {
- padding: 10px;
+  font-size: 1.125rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
 }
+
+.strength-point {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #2980b9;
+}
+
+
+
+/* .vision-card p {
+ padding: 10px;
+} */
 
 
 
@@ -939,6 +1283,86 @@ section.vision2 {
   padding: 20px;
 
   height: 100px;
+}
+
+/* new css for updated client */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;   
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container2 {
+  display: flex;
+  align-items: center;
+     flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+/* .h-cont {
+  width: auto;
+  height: auto;
+  display: flex; 
+  padding: 10px ;
+  background: #e6ae14;
+  border: #de5331 1px solid ;
+  margin-bottom: 10px ;
+} */
+.client-heading{
+  font-size: 1.8rem; 
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    padding:  10px 50px;
+    border: 2px solid  #e58f0e; 
+    border-radius: 50px; 
+    background-color: #e58f0e; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    display: inline-block; 
+    transition: all 0.3s ease-in-out;
+  
+}
+.client-heading:hover {
+  
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+
+}
+
+.header-cont {
+ 
+  
+  padding: 30px ;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: center;
+  border-radius: 30px;
+  
+}
+.image-box {
+  width: 250px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px  4px  10px  #5b5959; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Ensure images fit within the box */
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 
