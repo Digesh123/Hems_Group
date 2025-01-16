@@ -538,6 +538,12 @@ img#check {
   margin: 50px 0px;
 }
 
+#citycard{
+  display: flex;
+  justify-content: center;
+  
+}
+
 .cities_heading h1 {
   color: #00204a;
   text-decoration: underline;
@@ -772,10 +778,10 @@ section.service_section.layout_padding {
 }
 
 .contact_social a {
-  font-size: 15px;
+  font-size: 19px;
   color: #555;
-  padding: 22px;
-  border-radius: 50%;
+  padding: 25px;
+  border-radius: 15%;
   background-color: #f1f1f1;
   transition: background-color 0.3s ease;
 }
@@ -1282,8 +1288,15 @@ section.vision2 {
 /* new css for updated client */
 .image-container {
   display: flex;
-  flex-wrap: wrap; 
-  
+  flex-wrap: wrap;   
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container2 {
+  display: flex;
+  align-items: center;
+     flex-direction: column;
   justify-content: center;
   padding: 20px;
 }
